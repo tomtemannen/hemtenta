@@ -134,11 +134,11 @@ ol.rome{
 }
 
 .dropButton {
-        background-color: #ffffff; /*bakgrudsfärg på dropdown-menyn i "viloläge"*/
-        color: rgb(0, 0, 0); /*färg på texten på menyn*/
-        padding: 16px; /*storlek på bakgrundsfärgen, "knappen"*/
-        font-size: 15px; /*Storlek på texten*/
-        border: none; /*onödig, men ligger här för om man vill lägga till en kant och testa lite*/
+        background-color: #ffffff; 
+        color: rgb(0, 0, 0); 
+        padding: 16px; 
+        font-size: 15px; 
+        border: none; 
     }
     .dropDown {
         position: relative;
@@ -146,28 +146,40 @@ ol.rome{
     }
     .dropdown-content {
         display: none;
-        position: absolute; /*positionen satt för att menyn går över sakerna som ligger nedanför istället för att förskjutas*/
-        background-color: #f1f1f1; /*färg på bakgrunden på länkarna som kommer fram*/
-        min-width: 160px; /*storlek på menyn som kommer fram*/
+        position: absolute; 
+        background-color: #f1f1f1; 
+        min-width: 160px; 
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     .dropdown-content a {
-        color: rgb(0, 0, 0); /*Färg på länktexten i droppdownmenyn*/
-        padding: 12px 16px; /*förskjutning av länktexten (upp/ner och höger/vänster)*/
+        color: rgb(0, 0, 0); 
+        padding: 12px 16px; 
         text-decoration: none;
-        display: block; /*för att kräva att länkarna hamnar under varandra*/
+        display: block; 
     }
     
     .dropdown-content a:hover {
-        background-color: #ddd; /*färg på bakgrunden när musen är över*/
+        background-color: #ddd; 
     }
     
     .dropDown:hover .dropdown-content {
-        display: block;  /*för att kräva att länkarna hamnar under varandra*/
+        display: block;  
     }
     
     .dropDown:hover .dropButton {
         background-color: #000000;
         color: white;
     }
+
+    .transition {
+        width: 100px;
+  height: 100px;
+  background: red;
+  transition: height 10s, width 5s, background-color 3s;
+ }
+ .transition:hover {
+    height: 300px;
+    width: 300px;
+    background: grey;
+  }
