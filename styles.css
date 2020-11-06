@@ -1,0 +1,173 @@
+body, html{ height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+}
+.bg {
+    background-image: url("background.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .card {
+    background-color: rgb(255, 255, 255, 0.4);
+  }
+  .dropButton {
+    background-color: #ffffff; /*bakgrudsfärg på dropdown-menyn i "viloläge"*/
+    color: rgb(0, 0, 0); /*färg på texten på menyn*/
+    padding: 16px; /*storlek på bakgrundsfärgen, "knappen"*/
+    font-size: 15px; /*Storlek på texten*/
+    border: none; /*onödig, men ligger här för om man vill lägga till en kant och testa lite*/
+}
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute; /*positionen satt för att menyn går över sakerna som ligger nedanför istället för att förskjutas*/
+    background-color: #f1f1f1; /*färg på bakgrunden på länkarna som kommer fram*/
+    min-width: 160px; /*storlek på menyn som kommer fram*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(0, 0, 0); /*Färg på länktexten i droppdownmenyn*/
+    padding: 12px 16px; /*förskjutning av länktexten (upp/ner och höger/vänster)*/
+    text-decoration: none;
+    display: block; /*för att kräva att länkarna hamnar under varandra*/
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /*färg på bakgrunden när musen är över*/
+}
+
+.dropDown:hover .dropdown-content {
+    display: block;  /*för att kräva att länkarna hamnar under varandra*/
+}
+
+.dropDown:hover .dropButton {
+    background-color: #000000; 
+    color: rgb(22, 0, 0); /*Färg på text när dropdown är aktiverad*/
+}
+
+.navbar {
+    border-radius: 10px 10px 0 0;
+}
+
+.greetings {
+    max-width: 400px;
+    margin: auto;
+
+}
+
+
+p:nth-child(even) {
+    color: rgb(37, 25, 199);
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.inputForm{
+    max-width: 400px;
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: rgb(0, 0, 0);
+    border-style: solid;
+    padding: 10px;
+}
+.filmer {
+color: deeppink;
+border: dodgerblue;
+border-style: solid;
+max-width: 300px;
+}
+.filmer li:nth-child(even){
+    color: dodgerblue;
+}
+    
+.nestad {
+    font-size: small;
+    color: deeppink;
+border: dodgerblue;
+border-style: dotted;
+max-width: 200px;
+list-style-type: upper-roman;
+
+}
+ol.rome{
+    list-style-type: upper-roman;
+    color: floralwhite;
+}
+
+.animering {
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes animation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    from {width: 100px;}
+    to {width: 300px;}
+}
+
+.dropButton {
+        background-color: #ffffff; /*bakgrudsfärg på dropdown-menyn i "viloläge"*/
+        color: rgb(0, 0, 0); /*färg på texten på menyn*/
+        padding: 16px; /*storlek på bakgrundsfärgen, "knappen"*/
+        font-size: 15px; /*Storlek på texten*/
+        border: none; /*onödig, men ligger här för om man vill lägga till en kant och testa lite*/
+    }
+    .dropDown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute; /*positionen satt för att menyn går över sakerna som ligger nedanför istället för att förskjutas*/
+        background-color: #f1f1f1; /*färg på bakgrunden på länkarna som kommer fram*/
+        min-width: 160px; /*storlek på menyn som kommer fram*/
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: rgb(0, 0, 0); /*Färg på länktexten i droppdownmenyn*/
+        padding: 12px 16px; /*förskjutning av länktexten (upp/ner och höger/vänster)*/
+        text-decoration: none;
+        display: block; /*för att kräva att länkarna hamnar under varandra*/
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd; /*färg på bakgrunden när musen är över*/
+    }
+    
+    .dropDown:hover .dropdown-content {
+        display: block;  /*för att kräva att länkarna hamnar under varandra*/
+    }
+    
+    .dropDown:hover .dropButton {
+        background-color: #000000;
+        color: white;
+    }
